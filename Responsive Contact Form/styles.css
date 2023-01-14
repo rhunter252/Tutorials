@@ -1,0 +1,199 @@
+@font-face {
+  font-family: Basement Grotesque;
+  src: url(./fonts/BasementGrotesque.otf) format("truetype");
+}
+
+@font-face {
+  font-family: Monument Extended;
+  src: url(./fonts/MonumentExtended-Regular.otf) format("truetype");
+}
+
+@font-face {
+  font-family: Neue Montreal;
+  src: url(./fonts/neue-montreal/NeueMontreal-Regular.otf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family: "Neue Montreal";
+  overflow-x: hidden;
+}
+
+.top-nav {
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+  text-align: center;
+  padding: 1em;
+  font-weight: 300;
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.nav .site-name {
+  font-family: "Basement Grotesque";
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.menu-icon {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.menu-icon ion-icon {
+  position: relative;
+  top: 2px;
+}
+
+.marquee {
+  width: 1000%;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 1.2rem;
+}
+
+.marquee span {
+  font-family: "Monument Extended";
+  font-weight: 700;
+  color: #ff4c0f;
+  font-size: 8em;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-left: -10%;
+  animation: marquee-animation 180s linear infinite;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.col {
+  width: 50%;
+  padding: 1em 3em;
+}
+.contact-section h3 {
+  text-transform: uppercase;
+  color: #747474;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-section span {
+  text-transform: uppercase;
+}
+
+.contact-details p {
+  font-size: 40px;
+  line-height: 60px;
+  padding-top: 0.8em;
+}
+
+.item {
+  padding: 4rem 0 0 0;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.address {
+  padding-left: 4rem;
+}
+
+input {
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #747474;
+  font-size: 24px;
+  padding: 0.4rem;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+
+.row {
+  display: flex;
+  margin: 2rem 0 !important;
+}
+
+textarea#message {
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #747474;
+  font-size: 24px;
+  padding: 0.4rem;
+  color: #fff;
+  font-family: "Neue Montreal";
+}
+.submit {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.submit a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Monument Extended";
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.send-icon {
+  font-size: 60px;
+}
+
+@media (min-width: 900px) {
+  html,
+  body {
+    height: 100%;
+  }
+
+  .contact-section {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media (max-width: 900px) {
+  .col {
+    width: 100%;
+  }
+}
